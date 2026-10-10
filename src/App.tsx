@@ -22,6 +22,7 @@ import { InquiryModal } from './components/common/InquiryModal';
 import { ScrollProgress } from './components/common/ScrollProgress';
 import { HairlineDivider } from './components/common/HairlineDivider';
 import { FAQSection } from './components/sections/FAQSection';
+import { TestimonialsSection } from './components/sections/TestimonialsSection';
 import { newsArticles } from './data/news';
 import { ArrowUpRight, BookOpen, Leaf } from 'lucide-react';
 
@@ -278,6 +279,15 @@ export default function App() {
                 </div>
               </div>
             </section>
+
+            {/* Subtle, full-width editorial hairline divider */}
+            <HairlineDivider />
+
+            {/* Client Testimonials & Global Trade Endorsements */}
+            <TestimonialsSection
+              lang={lang}
+              onOpenInquiry={(topic) => handleOpenInquiry(topic)}
+            />
 
             {/* Subtle, full-width editorial hairline divider */}
             <HairlineDivider />
