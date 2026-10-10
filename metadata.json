@@ -1,0 +1,8 @@
+{
+  "name": "Kidrill Group",
+  "description": "Premium corporate website for Kidrill Group, an international trading and resources conglomerate operating across Indonesia, Vietnam, and global markets in minerals, agricultural commodities, and seafood.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
