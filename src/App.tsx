@@ -21,6 +21,7 @@ import { CompaniesPage } from './components/pages/CompaniesPage';
 import { InquiryModal } from './components/common/InquiryModal';
 import { ScrollProgress } from './components/common/ScrollProgress';
 import { HairlineDivider } from './components/common/HairlineDivider';
+import { FAQSection } from './components/sections/FAQSection';
 import { newsArticles } from './data/news';
 import { ArrowUpRight, BookOpen, Leaf } from 'lucide-react';
 
@@ -30,16 +31,6 @@ export default function App() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
   const [initialInquiryProduct, setInitialInquiryProduct] = useState<string>('');
   const [initialInquiryCompany, setInitialInquiryCompany] = useState<string>('');
-
-  // Corporate Typography State (default: Plus Jakarta Sans, with Inter and Outfit options)
-  const [currentFont, setCurrentFont] = useState<'jakarta' | 'inter' | 'outfit'>(() => {
-    return (localStorage.getItem('kg-font-preference') as 'jakarta' | 'inter' | 'outfit') || 'jakarta';
-  });
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-font', currentFont);
-    localStorage.setItem('kg-font-preference', currentFont);
-  }, [currentFont]);
 
   const t = translations[lang];
 
@@ -127,8 +118,6 @@ export default function App() {
         lang={lang}
         onToggleLang={toggleLanguage}
         onOpenInquiry={() => handleOpenInquiry()}
-        currentFont={currentFont}
-        onChangeFont={setCurrentFont}
       />
 
       {/* Main Page Content Router */}
@@ -289,6 +278,15 @@ export default function App() {
                 </div>
               </div>
             </section>
+
+            {/* Subtle, full-width editorial hairline divider */}
+            <HairlineDivider />
+
+            {/* Frequently Asked Questions (FAQ) Section for New Clients & Trade Desks */}
+            <FAQSection
+              lang={lang}
+              onOpenInquiry={(topic) => handleOpenInquiry(topic)}
+            />
 
             {/* Subtle, full-width editorial hairline divider */}
             <HairlineDivider />
