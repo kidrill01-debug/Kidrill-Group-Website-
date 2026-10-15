@@ -17,7 +17,7 @@ export const MarketsPage: React.FC<MarketsPageProps> = ({
   const t = translations[lang];
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12">
@@ -45,7 +45,7 @@ export const MarketsPage: React.FC<MarketsPageProps> = ({
       {/* Detailed Market Corridor Dossiers */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20">
         <div className="mb-12 pb-4 border-b border-slate-200 flex items-center justify-between">
-          <h2 className="text-2xl font-light text-slate-900 tracking-tight">
+          <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
             {lang === 'en' ? 'International Market Profiles' : '글로벌 진출 시장 세부 현황'}
           </h2>
           <span className="text-xs font-mono text-slate-400 uppercase font-semibold">5 PRIMARY CORRIDORS</span>
@@ -69,7 +69,7 @@ export const MarketsPage: React.FC<MarketsPageProps> = ({
                   {reg.role}
                 </div>
 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 font-light">
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
                   {reg.desc}
                 </p>
 

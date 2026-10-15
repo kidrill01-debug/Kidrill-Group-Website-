@@ -169,7 +169,7 @@ export const BusinessAreas: React.FC<BusinessAreasProps> = ({
   ];
 
   return (
-    <section className="py-28 bg-[#fdfcf8] text-slate-900">
+    <section className="py-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
@@ -207,7 +207,7 @@ export const BusinessAreas: React.FC<BusinessAreasProps> = ({
 
                 {/* Editorial Number */}
                 <div className="absolute top-5 left-6" style={{ transform: 'translateZ(20px)' }}>
-                  <span className="text-2xl font-mono font-light text-white drop-shadow">
+                  <span className="text-2xl font-mono font-bold text-white drop-shadow">
                     {card.number}
                   </span>
                 </div>
@@ -224,13 +224,13 @@ export const BusinessAreas: React.FC<BusinessAreasProps> = ({
               <div className="p-8 flex-1 flex flex-col justify-between">
                 <div>
                   <h3
-                    className="text-2xl font-medium text-slate-900 mb-3 group-hover:text-[#b08a3e] transition-colors"
+                    className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-[#b08a3e] transition-colors"
                     style={{ transform: 'translateZ(18px)' }}
                   >
                     {card.title}
                   </h3>
 
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
                     {card.description}
                   </p>
 

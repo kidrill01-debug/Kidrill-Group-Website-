@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 170" fill="none">
+  <defs>
+    <!-- Dark Gunmetal / Obsidian Metallic Gradients -->
+    <linearGradient id="kd-metal-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#434b57"/>
+      <stop offset="25%" stop-color="#2d333c"/>
+      <stop offset="55%" stop-color="#1b1f25"/>
+      <stop offset="85%" stop-color="#111317"/>
+      <stop offset="100%" stop-color="#0a0b0d"/>
+    </linearGradient>
+
+    <linearGradient id="kd-bevel-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="40%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="kd-drill-shank" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3a414c"/>
+      <stop offset="35%" stop-color="#555f6e"/>
+      <stop offset="70%" stop-color="#22272f"/>
+      <stop offset="100%" stop-color="#121518"/>
+    </linearGradient>
+
+    <linearGradient id="kd-drill-flute" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2229"/>
+      <stop offset="40%" stop-color="#0c0e11"/>
+      <stop offset="70%" stop-color="#2b313b"/>
+      <stop offset="100%" stop-color="#4a5360"/>
+    </linearGradient>
+
+    <linearGradient id="kd-drill-tip" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#505b6a"/>
+      <stop offset="50%" stop-color="#1f242c"/>
+      <stop offset="100%" stop-color="#0e1013"/>
+    </linearGradient>
+
+    <!-- Subtle Bevel & Drop Shadow -->
+    <filter id="kd-shadow" x="-5%" y="-5%" width="115%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <g >
+    <!-- Letter 'k' -->
+    <!-- 'k' vertical stem -->
+    <path d="M 24 48 L 49 48 L 49 126 L 24 126 Z" fill="url(#kd-metal-dark)"/>
+    <!-- 'k' upper diagonal arm with angled chamfer cut -->
+    <path d="M 49 84 L 88 48 L 102 48 L 62 86 Z" fill="url(#kd-metal-dark)"/>
+    <!-- 'k' lower diagonal leg -->
+    <path d="M 54 82 L 98 126 L 73 126 L 43 93 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- Letter 'i' (first) -->
+    <!-- 'i' dot -->
+    <circle cx="124" cy="52" r="12" fill="url(#kd-metal-dark)"/>
+    <!-- 'i' stem -->
+    <path d="M 111 68 L 137 68 L 137 126 L 111 126 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- Letter 'd' (bowl on left, merging into the drill bit stem) -->
+    <!-- 'd' outer bowl -->
+    <path d="M 194 68 C 160 68 143 85 143 97 C 143 113 162 126 194 126 L 194 104 C 176 104 167 99 167 97 C 167 92 176 90 194 90 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- DRILL BIT (Integrated into stem of 'd', junction of 'r', and descending below baseline) -->
+    <!-- Upper Drill Shank (above 'd' bowl) -->
+    <path d="M 192 24 L 217 24 L 217 68 L 192 68 Z" fill="url(#kd-drill-shank)"/>
+    <path d="M 192 24 L 195 21 L 214 21 L 217 24 Z" fill="url(#kd-bevel-dark)" opacity="0.6"/>
+
+    <!-- Drill Bit Body with Helical Twist Flutes (y=68 to y=126) -->
+    <!-- Right side stem & land -->
+    <path d="M 194 68 L 217 68 L 217 84 C 217 84 214 96 206 104 C 197 114 194 126 194 126 L 194 90 C 205 90 213 83 213 78 L 194 78 Z" fill="url(#kd-drill-flute)"/>
+    
+    <!-- Central Helical Swirl cut connecting 'd' and 'r' -->
+    <path d="M 192 68 L 217 68 L 217 90 C 211 96 200 102 192 110 Z" fill="url(#kd-metal-dark)"/>
+    <path d="M 192 90 C 204 84 217 92 217 106 L 217 126 L 192 126 Z" fill="url(#kd-drill-shank)"/>
+    
+    <!-- Helical Groove Crescent highlight -->
+    <path d="M 192 84 C 206 80 216 88 217 96 L 217 90 C 213 82 203 76 192 78 Z" fill="url(#kd-bevel-dark)" opacity="0.7"/>
+
+    <!-- Descending Drill Bit Tip (Extends past baseline y=126 down to y=160) -->
+    <!-- Tip body with spiral cutting edge -->
+    <path d="M 192 126 C 192 135 196 144 204.5 158 C 213 144 217 135 217 126 Z" fill="url(#kd-drill-tip)"/>
+    <!-- Left cutting flute twist -->
+    <path d="M 192 126 C 193 134 198 142 204.5 158 C 203 148 198 138 194 130 Z" fill="url(#kd-bevel-dark)" opacity="0.5"/>
+    <!-- Right cutting margin flute shadow -->
+    <path d="M 217 126 C 216 134 211 143 204.5 158 C 207 146 213 136 217 126 Z" fill="#0c0d10"/>
+    <!-- Spiral chisel groove line across tip -->
+    <path d="M 193 129 C 202 136 213 133 217 140 L 216 142 C 211 136 201 138 192 131 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- Letter 'r' (Branching off the right of the drill bit) -->
+    <path d="M 217 76 C 224 70 236 68 248 68 C 257 68 266 71 270 76 L 270 94 C 265 89 257 86 248 86 C 236 86 226 91 217 96 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- Letter 'i' (second) -->
+    <!-- 'i' dot -->
+    <circle cx="294" cy="52" r="12" fill="url(#kd-metal-dark)"/>
+    <!-- 'i' stem -->
+    <path d="M 281 68 L 307 68 L 307 126 L 281 126 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- Letter 'l' (first) -->
+    <path d="M 320 48 L 345 48 L 345 126 L 320 126 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- Letter 'l' (second) -->
+    <path d="M 357 48 L 382 48 L 382 126 L 357 126 Z" fill="url(#kd-metal-dark)"/>
+
+    <!-- "GROUP" text rendered in bold wide-tracked geometry -->
+    <text x="236" y="152" 
+          font-family="system-ui, -apple-system, 'Inter', 'Montserrat', sans-serif" 
+          font-size="22" 
+          font-weight="900" 
+          letter-spacing="0.3em" 
+          fill="url(#kd-metal-dark)">GROUP</text>
+  </g>
+</svg>

@@ -65,12 +65,8 @@ ${formData.message}
 
 =====================================================
 Headquarters & Operating Trading Desks:
-1. PT PMA Kidrill Metal Mining
-   23 RD FLOOR, PAKUWON CENTRE, JL EMBONG MALANG KEDUNGDORO,
-   TEGALSARI, KOTA SURABAYA, JAWA TIMUR, INDONESIA
-2. Thunder Mark Vietnam Co., Ltd
-   Golding King Tower, Nguyen Luong Bang St., Tan Hung Ward,
-   Ho Chi Minh City, Vietnam
+1. PT PMA Kidrill Metal Mining: Surabaya, Indonesia
+2. Thunder Mark Vietnam Co., Ltd: Ho Chi Minh City, Vietnam
 
 Commercial Contact:
 Email: total@datmv.com
@@ -88,7 +84,7 @@ Tel: +62 822 64973015
   };
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-16">
@@ -176,9 +172,9 @@ Tel: +62 822 64973015
                 {t.contact.office1.title}
               </h3>
 
-              <div className="flex items-start gap-3 text-xs text-slate-600 font-light leading-relaxed">
-                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0 mt-0.5" />
-                <span className="font-mono text-[11px] text-slate-500">
+              <div className="flex items-center gap-3 text-xs text-slate-700 leading-relaxed font-medium">
+                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0" />
+                <span className="font-mono text-xs text-slate-700">
                   {t.contact.office1.address}
                 </span>
               </div>
@@ -188,9 +184,9 @@ Tel: +62 822 64973015
                 className="inline-flex items-center gap-1.5 text-xs text-slate-600 hover:text-slate-950 transition-colors font-mono pt-1 cursor-pointer"
               >
                 {copiedField === 'address1' ? (
-                  <span className="text-emerald-600 flex items-center gap-1"><Check className="w-3.5 h-3.5" /> Copied Address</span>
+                  <span className="text-emerald-600 flex items-center gap-1"><Check className="w-3.5 h-3.5" /> Copied Location</span>
                 ) : (
-                  <span className="flex items-center gap-1"><Copy className="w-3.5 h-3.5" /> Copy Official Address</span>
+                  <span className="flex items-center gap-1"><Copy className="w-3.5 h-3.5" /> Copy Location</span>
                 )}
               </button>
             </div>
@@ -208,9 +204,9 @@ Tel: +62 822 64973015
                 {t.contact.office2.title}
               </h3>
 
-              <div className="flex items-start gap-3 text-xs text-slate-600 font-light leading-relaxed">
-                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0 mt-0.5" />
-                <span className="font-mono text-[11px] text-slate-500">
+              <div className="flex items-center gap-3 text-xs text-slate-700 leading-relaxed font-medium">
+                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0" />
+                <span className="font-mono text-xs text-slate-700">
                   {t.contact.office2.address}
                 </span>
               </div>
@@ -220,9 +216,9 @@ Tel: +62 822 64973015
                 className="inline-flex items-center gap-1.5 text-xs text-slate-600 hover:text-slate-950 transition-colors font-mono pt-1 cursor-pointer"
               >
                 {copiedField === 'address2' ? (
-                  <span className="text-emerald-600 flex items-center gap-1"><Check className="w-3.5 h-3.5" /> Copied Address</span>
+                  <span className="text-emerald-600 flex items-center gap-1"><Check className="w-3.5 h-3.5" /> Copied Location</span>
                 ) : (
-                  <span className="flex items-center gap-1"><Copy className="w-3.5 h-3.5" /> Copy Official Address</span>
+                  <span className="flex items-center gap-1"><Copy className="w-3.5 h-3.5" /> Copy Location</span>
                 )}
               </button>
             </div>
@@ -236,10 +232,10 @@ Tel: +62 822 64973015
                   <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] block mb-2 font-semibold">
                     B2B INQUIRY FORM
                   </span>
-                  <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                     {t.contact.formTitle}
                   </h2>
-                  <p className="text-slate-500 text-sm mt-1 font-light">
+                  <p className="text-slate-500 text-sm mt-1">
                     {t.contact.formDesc}
                   </p>
                 </div>
@@ -388,7 +384,7 @@ Tel: +62 822 64973015
                   <span className="text-xs font-mono text-[#b08a3e] tracking-widest uppercase block mb-2 font-semibold">
                     TRACKING REFERENCE: {referenceId}
                   </span>
-                  <h3 className="text-3xl font-light text-slate-900 mb-3">
+                  <h3 className="text-3xl font-bold text-slate-900 mb-3">
                     {t.contact.successTitle}
                   </h3>
                   <p className="text-slate-600 text-sm max-w-lg mx-auto leading-relaxed">

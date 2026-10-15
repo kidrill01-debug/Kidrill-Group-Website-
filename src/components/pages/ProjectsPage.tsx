@@ -65,7 +65,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
   ];
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12">
@@ -93,7 +93,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
               <h3 className="text-sm font-semibold text-slate-900 mb-1">
                 {lang === 'en' ? 'B2B Proprietary Information Standard' : '기업 기밀 보호 원칙'}
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 font-light leading-relaxed max-w-2xl">
+              <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed max-w-2xl">
                 {lang === 'en'
                   ? 'Kidrill Group does not publicly disclose individual buyer contracts, mine concessions, or private trade counterparty identities. Formal project data and offtake parameters are made available upon verified institutional inquiry.'
                   : '키드릴 그룹은 거래처의 영업 기밀 보호를 위해 구체적인 고객사명이나 개별 광산 계약 정보를 외부에 무단 공개하지 않습니다. 상세 프로젝트 정보는 NDA 체결 후 공식 제공됩니다.'}
@@ -126,7 +126,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
                     <span className="text-slate-500">{proj.entity}</span>
                   </div>
 
-                  <h3 className="text-2xl font-medium text-slate-900">
+                  <h3 className="text-2xl font-bold text-slate-900">
                     {lang === 'en' ? proj.titleEn : proj.titleKo}
                   </h3>
                 </div>
@@ -140,7 +140,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
 
               <div className="pt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 <div className="lg:col-span-8">
-                  <p className="text-slate-600 text-sm leading-relaxed font-light">
+                  <p className="text-slate-600 text-sm leading-relaxed font-normal">
                     {lang === 'en' ? proj.descEn : proj.descKo}
                   </p>
                   <p className="text-xs font-mono text-slate-400 mt-3">

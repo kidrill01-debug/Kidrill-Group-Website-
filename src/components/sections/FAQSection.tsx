@@ -130,11 +130,11 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ lang, onOpenInquiry }) =
     : FAQ_ITEMS.filter((item) => item.category === selectedFilter || (selectedFilter === 'trade' && (item.category === 'trade' || item.category === 'minerals' || item.category === 'agriculture')));
 
   return (
-    <section className="py-24 bg-[#fdfcf8] text-slate-900">
+    <section className="py-24 bg-white text-slate-900">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#fbf9f4] border border-[#c5a059]/30 text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-[#c5a059]/30 text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] font-semibold mb-4">
             <HelpCircle className="w-3.5 h-3.5 text-[#c5a059]" />
             <span>{lang === 'en' ? 'CLIENT ONBOARDING & TRADE DESK' : '신규 바이어 안내 & FAQ'}</span>
           </div>
@@ -216,7 +216,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ lang, onOpenInquiry }) =
                 >
                   <div className="space-y-1.5 pr-2">
                     <div className="flex items-center gap-2">
-                      <span className="text-[11px] font-mono uppercase tracking-wider text-[#b08a3e] font-semibold px-2 py-0.5 rounded bg-[#fdfcf8] border border-slate-200">
+                      <span className="text-[11px] font-mono uppercase tracking-wider text-[#b08a3e] font-semibold px-2 py-0.5 rounded bg-slate-50 border border-slate-200">
                         {lang === 'en' ? item.categoryLabel.en : item.categoryLabel.ko}
                       </span>
                       <span className="text-xs font-mono text-slate-400">
@@ -253,7 +253,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ lang, onOpenInquiry }) =
                         {item.keyHighlights.map((hl, i) => (
                           <div
                             key={i}
-                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#fbf9f4] border border-[#c5a059]/30 text-xs font-mono text-slate-800"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-50 border border-[#c5a059]/30 text-xs font-mono text-slate-800"
                           >
                             <span className="w-1.5 h-1.5 rounded-full bg-[#c5a059]" />
                             <span>{lang === 'en' ? hl.en : hl.ko}</span>
@@ -294,7 +294,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ lang, onOpenInquiry }) =
                 ? 'Request a Tailored Commodity Offer & Spec Sheet'
                 : '맞춤형 원자재 사양서 및 견적 요청'}
             </h4>
-            <p className="text-slate-300 text-xs sm:text-sm font-light">
+            <p className="text-slate-300 text-xs sm:text-sm font-normal">
               {lang === 'en'
                 ? 'Our multilingual trade desk responds within 24 business hours with certified COA and pricing indications.'
                 : '한국어 및 영어 무역 데스크가 24시간 이내에 공인 COA 및 견적 안내서를 신속히 회신해 드립니다.'}

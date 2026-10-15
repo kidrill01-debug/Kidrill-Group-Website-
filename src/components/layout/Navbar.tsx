@@ -48,16 +48,17 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm py-3'
-          : 'bg-[#fdfcf8]/90 backdrop-blur-md border-b border-slate-200/80 shadow-[0_1px_3px_rgba(0,0,0,0.03)] py-4'
+          ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs py-3'
+          : 'bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-[0_1px_3px_rgba(0,0,0,0.03)] py-3.5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between gap-8">
-        {/* Zone 1: Brand Wordmark / Emblem (Dark text on light background) */}
+        {/* Zone 1: Brand Wordmark / Emblem (Dark text on pure white background) */}
         <div className="shrink-0">
           <KidrillLogo
             variant="dark"
             size="md"
+            textClassName="text-[17px] sm:text-[20px] md:text-[21px] tracking-[0.16em]"
             onClick={() => handleNavClick('home')}
             className="hover:opacity-95 transition-opacity"
           />

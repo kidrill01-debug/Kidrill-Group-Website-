@@ -139,7 +139,7 @@ export const GlobalMap: React.FC<GlobalMapProps> = ({
   ];
 
   return (
-    <section className="relative py-28 bg-[#fdfcf8] text-slate-900 overflow-hidden">
+    <section className="relative py-28 bg-white text-slate-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
@@ -175,7 +175,7 @@ export const GlobalMap: React.FC<GlobalMapProps> = ({
             </div>
 
             {/* SVG Map Container */}
-            <div className="relative aspect-[2/1] w-full select-none bg-[#fbf9f4] rounded-xl overflow-hidden border border-slate-100">
+            <div className="relative aspect-[2/1] w-full select-none bg-slate-50/70 rounded-xl overflow-hidden border border-slate-100">
               <svg
                 viewBox="0 0 1000 500"
                 className="w-full h-full"
@@ -390,11 +390,11 @@ export const GlobalMap: React.FC<GlobalMapProps> = ({
               <Anchor className="w-4 h-4 text-slate-400" />
             </div>
             <h4 className="text-lg font-semibold text-slate-900 mb-2">PT PMA Kidrill Metal Mining</h4>
-            <p className="text-slate-600 text-sm leading-relaxed mb-4 font-light">
+            <p className="text-slate-600 text-sm leading-relaxed mb-4 font-normal">
               {t.globalPresence.indonesiaDesc}
             </p>
-            <div className="text-xs font-mono text-slate-400">
-              Pakuwon Centre 23rd Fl, Surabaya, East Java
+            <div className="text-xs font-mono text-slate-500 font-medium">
+              Surabaya, Indonesia
             </div>
           </div>
 
@@ -406,11 +406,11 @@ export const GlobalMap: React.FC<GlobalMapProps> = ({
               <Compass className="w-4 h-4 text-slate-400" />
             </div>
             <h4 className="text-lg font-semibold text-slate-900 mb-2">Thunder Mark Vietnam Co., Ltd</h4>
-            <p className="text-slate-600 text-sm leading-relaxed mb-4 font-light">
+            <p className="text-slate-600 text-sm leading-relaxed mb-4 font-normal">
               {t.globalPresence.vietnamDesc}
             </p>
-            <div className="text-xs font-mono text-slate-400">
-              Golding King Tower, Tan Hung Ward, Ho Chi Minh City
+            <div className="text-xs font-mono text-slate-500 font-medium">
+              Ho Chi Minh City, Vietnam
             </div>
           </div>
         </div>

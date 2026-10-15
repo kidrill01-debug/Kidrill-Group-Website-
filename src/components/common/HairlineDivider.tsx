@@ -21,7 +21,7 @@ export const HairlineDivider: React.FC<HairlineDividerProps> = ({
       {/* Crisp neutral architectural hairline base */}
       <div className="absolute inset-0 bg-slate-200/75" />
 
-      {/* Editorial warm gold center dissipation to harmonize with #fdfcf8 and #c5a059 */}
+      {/* Editorial warm gold center dissipation to harmonize with pure white and #c5a059 */}
       {accent && (
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#c5a059]/35 to-transparent" />
       )}

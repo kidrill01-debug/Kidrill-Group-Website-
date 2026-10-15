@@ -17,7 +17,7 @@ export const CompaniesPage: React.FC<CompaniesPageProps> = ({
   const t = translations[lang];
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-16">
@@ -50,17 +50,12 @@ export const CompaniesPage: React.FC<CompaniesPageProps> = ({
                 PT PMA Kidrill Metal Mining
               </h2>
 
-              <div className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700">
-                <MapPin className="w-5 h-5 text-[#b08a3e] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold block text-slate-900 mb-0.5">Surabaya, East Java, Indonesia</span>
-                  <span className="text-slate-500 font-mono text-xs leading-relaxed block">
-                    23 RD FLOOR, PAKUWON CENTRE, JL EMBONG MALANG KEDUNGDORO, TEGALSARI, KOTA SURABAYA, JAWA TIMUR, INDONESIA
-                  </span>
-                </div>
+              <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700">
+                <MapPin className="w-5 h-5 text-[#b08a3e] shrink-0" />
+                <span className="font-semibold text-slate-900">Surabaya, Indonesia</span>
               </div>
 
-              <p className="text-slate-600 text-base leading-relaxed font-light">
+              <p className="text-slate-600 text-base leading-relaxed font-normal">
                 {lang === 'en'
                   ? 'PT PMA Kidrill Metal Mining is an internationally recognized Indonesian foreign direct investment (PMA) trading company specializing in mineral commodities, energy resources, copper, and base metals. The company acts as the vital bridge connecting premier Indonesian extraction zones with industrial processors worldwide.'
                   : 'PT PMA Kidrill Metal Mining은 인도네시아 외국인투자법인(PMA)으로서 광물 원자재, 에너지 자원(석탄), 전기동 및 비철금속의 국제 상업 무역을 전담합니다. 인도네시아 현지 광산 현장과 전 세계 산업 수요처를 잇는 핵심 가교 역할을 수행합니다.'}
@@ -145,17 +140,12 @@ export const CompaniesPage: React.FC<CompaniesPageProps> = ({
                 Thunder Mark Vietnam Co., Ltd
               </h2>
 
-              <div className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700">
-                <MapPin className="w-5 h-5 text-[#b08a3e] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold block text-slate-900 mb-0.5">Ho Chi Minh City, Vietnam</span>
-                  <span className="text-slate-500 font-mono text-xs leading-relaxed block">
-                    Golding King Tower, Nguyen Luong Bang St., Tan Hung Ward, Ho Chi Minh City, Vietnam
-                  </span>
-                </div>
+              <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700">
+                <MapPin className="w-5 h-5 text-[#b08a3e] shrink-0" />
+                <span className="font-semibold text-slate-900">Ho Chi Minh City, Vietnam</span>
               </div>
 
-              <p className="text-slate-600 text-base leading-relaxed font-light">
+              <p className="text-slate-600 text-base leading-relaxed font-normal">
                 {lang === 'en'
                   ? 'Thunder Mark Vietnam Co., Ltd is an international export and sourcing company headquartered in Ho Chi Minh City. The company specializes in connecting high-standard Vietnamese agricultural harvests, premium coffee, jasmine rice, processed foods, and cold-chain seafood with verified global buyers.'
                   : 'Thunder Mark Vietnam Co., Ltd는 베트남 호치민에 본사를 둔 국제 수출 및 소싱 전문 무역 법인입니다. 베트남산 고품질 농산물(자스민 쌀, 커피 생두), 가공식품, 냉동 수산물 및 광물 원자재를 전 세계 바이어에게 수출합니다.'}

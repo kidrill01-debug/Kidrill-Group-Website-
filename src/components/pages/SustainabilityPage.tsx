@@ -16,7 +16,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({
   const t = translations[lang];
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-16">
@@ -44,7 +44,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({
               <div>
                 <span className="text-xs font-mono text-[#b08a3e] font-semibold block mb-3">0{idx + 1}</span>
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">{item.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-light">
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
                   {item.desc}
                 </p>
               </div>
@@ -63,15 +63,15 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] block font-semibold">
               DUE DILIGENCE & AUDITING
             </span>
-            <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
               {lang === 'en'
                 ? 'Structured Due Diligence Across Upstream Sourcing'
                 : '산지 공급망 전반에 걸친 실사 및 책임 조달'}
             </h2>
-            <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
               {t.sustainability.disclaimer}
             </p>
-            <p className="text-slate-600 text-xs sm:text-sm font-light">
+            <p className="text-slate-600 text-xs sm:text-sm font-normal">
               {lang === 'en'
                 ? 'We evaluate third-party laboratory assay certificates (such as SGS or CCIC upon request) to ensure contractual specification fidelity and encourage origin producers to uphold environmental and statutory labor compliance.'
                 : '키드릴 그룹은 공인 독립 시험기관(SGS, CCIC 등)의 성분 및 품질 성적서를 요청 시 투명하게 제공하며, 원산지 협력사의 환경 및 노동 규정 준수를 적극 장려합니다.'}

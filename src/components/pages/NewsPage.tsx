@@ -19,7 +19,7 @@ export const NewsPage: React.FC<NewsPageProps> = ({ lang }) => {
   });
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12">
@@ -93,7 +93,7 @@ export const NewsPage: React.FC<NewsPageProps> = ({ lang }) => {
                   {lang === 'en' ? art.titleEn : art.titleKo}
                 </h3>
 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 font-light line-clamp-3">
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 font-normal line-clamp-3">
                   {lang === 'en' ? art.summaryEn : art.summaryKo}
                 </p>
               </div>
@@ -140,13 +140,13 @@ export const NewsPage: React.FC<NewsPageProps> = ({ lang }) => {
                 </span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-light text-slate-900 leading-tight">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 leading-tight">
                 {lang === 'en' ? readingArticle.titleEn : readingArticle.titleKo}
               </h2>
             </div>
 
             {/* Article Content Paragraphs */}
-            <div className="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed font-light">
+            <div className="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
               {(lang === 'en' ? readingArticle.contentEn : readingArticle.contentKo).map((para, idx) => (
                 <p key={idx}>{para}</p>
               ))}

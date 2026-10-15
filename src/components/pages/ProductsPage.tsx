@@ -19,7 +19,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ lang, onOpenInquiry 
   });
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Page Header */}
         <div className="max-w-3xl mb-12">
@@ -40,7 +40,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ lang, onOpenInquiry 
         {/* Corporate Confidentiality & Assay Compliance Notice */}
         <div className="mb-12 p-6 rounded-2xl bg-white border border-slate-200 flex items-start gap-4 shadow-xs">
           <Info className="w-5 h-5 text-[#b08a3e] shrink-0 mt-0.5" />
-          <div className="text-xs sm:text-sm text-slate-700 leading-relaxed font-light">
+          <div className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
             {t.products.notice}
           </div>
         </div>
@@ -121,7 +121,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ lang, onOpenInquiry 
                     {lang === 'en' ? prod.titleEn : prod.titleKo}
                   </h3>
 
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-5 line-clamp-3 font-light">
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-5 line-clamp-3 font-normal">
                     {lang === 'en' ? prod.descriptionEn : prod.descriptionKo}
                   </p>
 

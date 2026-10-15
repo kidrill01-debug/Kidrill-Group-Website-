@@ -120,7 +120,7 @@ Email: total@datmv.com | Tel: +62 822 64973015
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] block mb-1 font-semibold">
                 {t.contact.tag}
               </span>
-              <h3 className="text-2xl font-light text-slate-900 tracking-tight">
+              <h3 className="text-2xl font-bold text-slate-900 tracking-tight">
                 {t.contact.formTitle}
               </h3>
               <p className="text-slate-500 text-xs sm:text-sm mt-1">
@@ -278,7 +278,7 @@ Email: total@datmv.com | Tel: +62 822 64973015
               <span className="text-xs font-mono text-[#b08a3e] tracking-widest uppercase block mb-1 font-semibold">
                 REFERENCE: {referenceId}
               </span>
-              <h3 className="text-2xl font-light text-slate-900 mb-2">
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">
                 {t.contact.successTitle}
               </h3>
               <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed">

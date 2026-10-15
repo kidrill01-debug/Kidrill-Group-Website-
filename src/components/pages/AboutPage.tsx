@@ -18,7 +18,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
   const t = translations[lang];
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-16">
@@ -79,7 +79,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 STRATEGIC HORIZON
               </span>
               <h3 className="text-2xl font-semibold text-slate-900">{t.about.visionTitle}</h3>
-              <p className="text-slate-600 text-lg font-light leading-relaxed">
+              <p className="text-slate-600 text-lg font-normal leading-relaxed">
                 &ldquo;{t.about.visionText}&rdquo;
               </p>
             </div>
@@ -95,7 +95,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 OPERATIONAL MANDATE
               </span>
               <h3 className="text-2xl font-semibold text-slate-900">{t.about.missionTitle}</h3>
-              <p className="text-slate-600 text-lg font-light leading-relaxed">
+              <p className="text-slate-600 text-lg font-normal leading-relaxed">
                 &ldquo;{t.about.missionText}&rdquo;
               </p>
             </div>
@@ -121,7 +121,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               >
                 <span className="text-xs font-mono text-[#b08a3e] font-semibold block mb-3">0{idx + 1}</span>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">{val.name}</h3>
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-light">
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
                   {val.desc}
                 </p>
               </div>
@@ -135,10 +135,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] block font-semibold">
               REGIONAL ARCHITECTURE
             </span>
-            <h2 className="text-3xl font-light text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-bold text-slate-900 tracking-tight">
               {t.about.networkTitle}
             </h2>
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-light">
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
               {t.about.networkDesc}
             </p>
 
@@ -165,8 +165,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 INDONESIAN HUB
               </span>
               <h4 className="text-lg font-semibold text-slate-900 mb-2">PT PMA Kidrill Metal Mining</h4>
-              <p className="text-slate-500 text-xs leading-relaxed font-mono">
-                23 RD FLOOR, PAKUWON CENTRE, JL EMBONG MALANG KEDUNGDORO, TEGALSARI, KOTA SURABAYA, JAWA TIMUR, INDONESIA
+              <p className="text-slate-600 text-xs leading-relaxed font-mono font-medium">
+                Surabaya, Indonesia
               </p>
             </div>
 
@@ -175,8 +175,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 VIETNAMESE HUB
               </span>
               <h4 className="text-lg font-semibold text-slate-900 mb-2">Thunder Mark Vietnam Co., Ltd</h4>
-              <p className="text-slate-500 text-xs leading-relaxed font-mono">
-                Golding King Tower, Nguyen Luong Bang St., Tan Hung Ward, Ho Chi Minh City, Vietnam
+              <p className="text-slate-600 text-xs leading-relaxed font-mono font-medium">
+                Ho Chi Minh City, Vietnam
               </p>
             </div>
           </div>

@@ -212,7 +212,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                 <Building className="w-3.5 h-3.5 text-[#c5a059]" />
                 {active.entityTagged}
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#fbf9f4] border border-[#c5a059]/30 text-xs font-mono text-slate-800 font-medium">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-50 border border-[#c5a059]/30 text-xs font-mono text-slate-800 font-medium">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#c5a059]" />
                 {lang === 'en' ? `Partner Since ${active.verifiedSince}` : `${active.verifiedSince}년부터 파트너십 유지`}
               </span>
@@ -252,7 +252,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
             </div>
 
             {/* Trade Commodity & Volume Pill Block */}
-            <div className="bg-[#fbf9f4] border border-[#c5a059]/30 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center gap-4 text-xs font-mono">
+            <div className="bg-slate-50 border border-[#c5a059]/30 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center gap-4 text-xs font-mono">
               <div className="space-y-0.5">
                 <span className="text-[10px] uppercase text-slate-600 block">
                   {lang === 'en' ? 'Commodity Portfolio' : '주요 취급 품목'}

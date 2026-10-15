@@ -48,7 +48,7 @@ export const MineralsPage: React.FC<MineralsPageProps> = ({
   ];
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] mb-4">
@@ -84,9 +84,9 @@ export const MineralsPage: React.FC<MineralsPageProps> = ({
               <div className="text-base font-semibold text-slate-900">
                 PT PMA Kidrill Metal Mining
               </div>
-              <div className="flex items-start gap-2 text-xs text-slate-600">
-                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0 mt-0.5" />
-                <span>23 RD FLOOR, PAKUWON CENTRE, JL EMBONG MALANG KEDUNGDORO, TEGALSARI, KOTA SURABAYA, JAWA TIMUR, INDONESIA</span>
+              <div className="flex items-center gap-2 text-xs text-slate-600 font-medium">
+                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0" />
+                <span>Surabaya, Indonesia</span>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ export const MineralsPage: React.FC<MineralsPageProps> = ({
         {/* Commodity Portfolio Breakdown */}
         <div className="mb-20">
           <div className="mb-8 pb-4 border-b border-slate-200 flex items-center justify-between">
-            <h2 className="text-2xl font-light text-slate-900 tracking-tight">
+            <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
               {lang === 'en' ? 'Primary Commodity Portfolio' : '주요 취급 광물 및 원자재'}
             </h2>
             <span className="text-xs font-mono text-[#b08a3e] uppercase tracking-wider font-semibold">
@@ -145,7 +145,7 @@ export const MineralsPage: React.FC<MineralsPageProps> = ({
                     <span className="text-xs font-mono text-slate-400">ID-MIN-0{idx + 1}</span>
                   </div>
 
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
                     {lang === 'en' ? item.descEn : item.descKo}
                   </p>
                 </div>
@@ -173,7 +173,7 @@ export const MineralsPage: React.FC<MineralsPageProps> = ({
           <h3 className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] mb-3 font-semibold">
             DESTINATION MARKETS SERVED
           </h3>
-          <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+          <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
             {lang === 'en'
               ? 'Our mineral trading desk structures bulk sea freight to major ports across Southeast Asia, China, South Korea, Europe, and the United States.'
               : '수라바야 트레이딩 데스크는 한국, 중국, 동남아, 유럽 및 미국 주요 항만으로의 대형 벌크 해상 운송 계약을 체결 및 총괄합니다.'}

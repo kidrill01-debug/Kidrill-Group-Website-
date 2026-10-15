@@ -156,7 +156,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, lang, onOpenInquiry 
                 <span>PT PMA Kidrill Metal Mining</span>
               </div>
               <p className="text-[11px] text-slate-400 leading-snug">
-                23 RD FLOOR, PAKUWON CENTRE, JL EMBONG MALANG KEDUNGDORO, TEGALSARI, KOTA SURABAYA, JAWA TIMUR, INDONESIA
+                Surabaya, Indonesia
               </p>
             </div>
 
@@ -167,7 +167,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, lang, onOpenInquiry 
                 <span>Thunder Mark Vietnam Co., Ltd</span>
               </div>
               <p className="text-[11px] text-slate-400 leading-snug">
-                Golding King Tower, Nguyen Luong Bang St., Tan Hung Ward, Ho Chi Minh City, Vietnam
+                Ho Chi Minh City, Vietnam
               </p>
             </div>
 

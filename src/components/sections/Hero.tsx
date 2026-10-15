@@ -24,8 +24,8 @@ export const Hero: React.FC<HeroProps> = ({ lang, onNavigate, onOpenInquiry }) =
         />
         {/* Measured dark scrim for high contrast and readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/95 via-[#0f172a]/75 to-[#0f172a]/40" />
-        {/* Smooth fade out to #fdfcf8 at the bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#fdfcf8] via-transparent to-[#0f172a]/50" />
+        {/* Smooth fade out to white at the bottom */}
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-[#0f172a]/50" />
       </div>
 
       {/* Main Content Area */}
@@ -43,12 +43,12 @@ export const Hero: React.FC<HeroProps> = ({ lang, onNavigate, onOpenInquiry }) =
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-[-0.03em] text-white leading-[1.06] text-balance">
             {lang === 'en' ? (
               <>
-                <span className="block font-bold">GLOBAL RESOURCES.</span>
+                <span className="block font-bold">GLOBAL RESOURCES</span>
                 <span className="block font-semibold text-[#e2e8f0]">TRUSTED TRADE.</span>
               </>
             ) : (
               <>
-                <span className="block font-bold">글로벌 자원.</span>
+                <span className="block font-bold">글로벌 자원</span>
                 <span className="block font-semibold text-[#e2e8f0]">신뢰할 수 있는 무역.</span>
               </>
             )}

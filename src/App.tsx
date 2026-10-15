@@ -108,7 +108,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fdfcf8] text-slate-900 flex flex-col font-sans selection:bg-[#c5a059] selection:text-white relative">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-[#c5a059] selection:text-white relative">
       {/* Slim, elegant editorial scroll progress bar tracking viewport scroll position */}
       <ScrollProgress />
 
@@ -165,10 +165,10 @@ export default function App() {
             {/* Subtle, full-width editorial hairline divider */}
             <HairlineDivider />
 
-            {/* Sustainability Teaser Section (Soft warm light surface) */}
-            <section className="py-24 bg-[#fdfcf8] relative overflow-hidden">
+            {/* Sustainability Teaser Section (Clean bright luminous surface) */}
+            <section className="py-24 bg-white relative overflow-hidden">
               <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                <div className="p-10 sm:p-14 rounded-3xl bg-[#fbf9f4] border border-slate-200 relative overflow-hidden flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 shadow-xs">
+                <div className="p-10 sm:p-14 rounded-3xl bg-slate-50/80 border border-slate-200 relative overflow-hidden flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 shadow-xs">
                   <div className="max-w-2xl space-y-4">
                     <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] font-semibold">
                       <Leaf className="w-3.5 h-3.5" />
@@ -221,7 +221,7 @@ export default function App() {
             <HairlineDivider />
 
             {/* Latest News & Insights Teaser */}
-            <section className="py-24 bg-[#fdfcf8]">
+            <section className="py-24 bg-white">
               <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
                   <div>
@@ -308,13 +308,13 @@ export default function App() {
                   PARTNER WITH KIDRILL GROUP
                 </span>
 
-                <h2 className="text-3xl sm:text-5xl font-light text-white tracking-tight">
+                <h2 className="text-3xl sm:text-5xl font-bold text-white tracking-tight">
                   {lang === 'en'
                     ? 'Connecting Mineral Resources and Products with Serious Buyers.'
                     : '안정적인 원자재 및 농수산물 공급과 진성 바이어의 연결.'}
                 </h2>
 
-                <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed">
+                <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
                   {lang === 'en'
                     ? 'Engage directly with our commercial desks in Indonesia and Vietnam for long-term B2B commodity contracts, export tenders, and structured trade.'
                     : '인도네시아와 베트남 현지 무역 데스크를 통해 장기 B2B 공급 계약, 수출 견적 및 맞춤형 거래를 신속히 협의하십시오.'}

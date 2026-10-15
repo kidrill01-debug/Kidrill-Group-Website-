@@ -17,7 +17,7 @@ export const CompaniesSection: React.FC<CompaniesSectionProps> = ({
   const t = translations[lang];
 
   return (
-    <section className="py-28 bg-[#fdfcf8] text-slate-900">
+    <section className="py-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-20">
@@ -44,7 +44,7 @@ export const CompaniesSection: React.FC<CompaniesSectionProps> = ({
                   <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] block mb-1 font-semibold">
                     OPERATING COMPANY 01 · INDONESIA
                   </span>
-                  <span className="text-sm text-slate-500 font-light">
+                  <span className="text-sm text-slate-500 font-medium">
                     {t.companies.co1Role}
                   </span>
                 </div>
@@ -54,23 +54,18 @@ export const CompaniesSection: React.FC<CompaniesSectionProps> = ({
               </div>
 
               {/* Company Title */}
-              <h3 className="text-2xl sm:text-3xl font-medium text-slate-900 mb-3">
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
                 {t.companies.co1Name}
               </h3>
 
               {/* Geographic Office Location */}
-              <div className="flex items-start gap-2.5 text-xs text-slate-700 bg-white p-4 rounded-xl border border-slate-200/80 mb-6 shadow-xs">
-                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold block text-slate-900 mb-0.5">Surabaya, East Java, Indonesia</span>
-                  <span className="text-slate-500 font-mono text-[11px] leading-relaxed block">
-                    {t.companies.co1Address}
-                  </span>
-                </div>
+              <div className="flex items-center gap-2.5 text-xs text-slate-700 bg-slate-50/80 px-4 py-3 rounded-xl border border-slate-200/80 mb-6 shadow-xs">
+                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0" />
+                <span className="font-semibold text-slate-900">{t.companies.co1Location}</span>
               </div>
 
               {/* Description */}
-              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
                 {t.companies.co1Desc}
               </p>
 
@@ -121,7 +116,7 @@ export const CompaniesSection: React.FC<CompaniesSectionProps> = ({
                   <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] block mb-1 font-semibold">
                     OPERATING COMPANY 02 · VIETNAM
                   </span>
-                  <span className="text-sm text-slate-500 font-light">
+                  <span className="text-sm text-slate-500 font-medium">
                     {t.companies.co2Role}
                   </span>
                 </div>
@@ -131,23 +126,18 @@ export const CompaniesSection: React.FC<CompaniesSectionProps> = ({
               </div>
 
               {/* Company Title */}
-              <h3 className="text-2xl sm:text-3xl font-medium text-slate-900 mb-3">
+              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
                 {t.companies.co2Name}
               </h3>
 
               {/* Geographic Office Location */}
-              <div className="flex items-start gap-2.5 text-xs text-slate-700 bg-white p-4 rounded-xl border border-slate-200/80 mb-6 shadow-xs">
-                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-semibold block text-slate-900 mb-0.5">Ho Chi Minh City, Vietnam</span>
-                  <span className="text-slate-500 font-mono text-[11px] leading-relaxed block">
-                    {t.companies.co2Address}
-                  </span>
-                </div>
+              <div className="flex items-center gap-2.5 text-xs text-slate-700 bg-slate-50/80 px-4 py-3 rounded-xl border border-slate-200/80 mb-6 shadow-xs">
+                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0" />
+                <span className="font-semibold text-slate-900">{t.companies.co2Location}</span>
               </div>
 
               {/* Description */}
-              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
                 {t.companies.co2Desc}
               </p>
 

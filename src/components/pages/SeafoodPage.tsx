@@ -48,7 +48,7 @@ export const SeafoodPage: React.FC<SeafoodPageProps> = ({
   ];
 
   return (
-    <div className="pt-32 pb-28 bg-[#fdfcf8] text-slate-900">
+    <div className="pt-32 pb-28 bg-white text-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] mb-4">
@@ -84,9 +84,9 @@ export const SeafoodPage: React.FC<SeafoodPageProps> = ({
               <div className="text-base font-semibold text-slate-900">
                 Thunder Mark Vietnam Co., Ltd
               </div>
-              <div className="flex items-start gap-2 text-xs text-slate-600">
-                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0 mt-0.5" />
-                <span>Golding King Tower, Nguyen Luong Bang St., Tan Hung Ward, Ho Chi Minh City, Vietnam</span>
+              <div className="flex items-center gap-2 text-xs text-slate-600 font-medium">
+                <MapPin className="w-4 h-4 text-[#b08a3e] shrink-0" />
+                <span>Ho Chi Minh City, Vietnam</span>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ export const SeafoodPage: React.FC<SeafoodPageProps> = ({
         {/* Commodity Portfolio Breakdown */}
         <div className="mb-20">
           <div className="mb-8 pb-4 border-b border-slate-200 flex items-center justify-between">
-            <h2 className="text-2xl font-light text-slate-900 tracking-tight">
+            <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
               {lang === 'en' ? 'Export Seafood Catalogue' : '수산물 수출 주요 품목'}
             </h2>
             <span className="text-xs font-mono text-[#b08a3e] uppercase tracking-wider flex items-center gap-1.5 font-semibold">
@@ -146,7 +146,7 @@ export const SeafoodPage: React.FC<SeafoodPageProps> = ({
                     <span className="text-xs font-mono text-slate-400">VN-SEA-0{idx + 1}</span>
                   </div>
 
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
                     {lang === 'en' ? item.descEn : item.descKo}
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export const SeafoodPage: React.FC<SeafoodPageProps> = ({
           <h3 className="text-xs font-mono uppercase tracking-[0.2em] text-[#b08a3e] mb-3 font-semibold">
             INTERNATIONAL LOGISTICS & IMPORT CLEARANCE
           </h3>
-          <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+          <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
             {lang === 'en'
               ? 'Consignments are loaded under continuous temperature monitoring (-18°C or below) from Cat Lai and regional deepwater container ports directly to destination berths in South Korea, China, Europe, and the US.'
               : '전 선적 화물은 호치민 깟라이(Cat Lai) 및 인근 심수항에서 목적항까지 -18°C 이하의 리퍼 컨테이너를 통해 연속 온도 기록과 함께 안전하게 운송됩니다.'}
